@@ -2,6 +2,7 @@ class Solution {
     
     // O(n) time
     // O(height) space
+    // could be better: O(1) space no recursion, changing in-place right child <-> parent
     
     func increasingBST(_ root: TreeNode?) -> TreeNode? {        
         var newRoot: TreeNode?
