@@ -1,0 +1,34 @@
+class Solution {
+    func buddyStrings(_ a: String, _ b: String) -> Bool {
+        
+        if a.count != b.count {
+            return false
+        }
+        
+        
+        if a == b {
+            let set = Set(a)
+            return set.count < a.count
+        } else {
+            var diffs = [Int]()
+            
+            let a = Array(a)
+            let b = Array(b)
+            
+            for i in 0..<a.count {
+                if a[i] != b[i] {
+                    diffs.append(i)
+                }
+                if diffs.count > 2 {
+                    return false
+                }
+            }
+            return 
+                diffs.count == 2 && 
+                a[diffs[0]] == b[diffs[1]] &&
+                b[diffs[0]] == a[diffs[1]]
+            
+        }
+        
+    }
+}
