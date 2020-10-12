@@ -1,4 +1,8 @@
 class Solution {
+    
+    // O(n) time
+    // O(height) space
+    
     func increasingBST(_ root: TreeNode?) -> TreeNode? {        
         var newRoot: TreeNode?
         traverse(root, &newRoot)
