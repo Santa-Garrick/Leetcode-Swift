@@ -1,8 +1,8 @@
 class Solution {
 
 //
-// O(n) time
-// O(1) space
+// O(n) time: 1 loop in helper function
+// O(1) space: 5 additional variables
 //
 
     func rob(_ nums: [Int]) -> Int {
@@ -15,6 +15,7 @@ class Solution {
         return max(robLine(dropLast), robLine(dropFirst))
     }
     
+    // Helper: rob lined houses
     private func robLine(_ nums: [Int]) -> Int {
         
         if nums.isEmpty { return 0 }
