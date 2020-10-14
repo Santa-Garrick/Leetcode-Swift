@@ -18,8 +18,8 @@
 class Solution {
 
 //
-// O(n) time
-// O(n) space
+// O(n1 + n2) time
+// O(n1 + n2) space
 //
 
     func leafSimilar(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
