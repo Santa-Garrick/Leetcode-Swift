@@ -9,7 +9,10 @@ class Solution {
         if nums.isEmpty { return 0 }
         if nums.count == 1 { return nums[0] }
         
-        return max(robLine(Array(nums.dropLast())), robLine(Array(nums.dropFirst())))
+        let dropLast = Array(nums.dropLast())
+        let dropFirst = Array(nums.dropFirst())
+        
+        return max(robLine(dropLast), robLine(dropFirst))
     }
     
     private func robLine(_ nums: [Int]) -> Int {
