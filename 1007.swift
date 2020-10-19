@@ -16,7 +16,6 @@ class Solution {
         
         for num in 1...6 {
             let union = aIndices[num - 1].union(bIndices[num - 1])
-            print(union)
             if union.count >= a.count {
                 ans[num - 1] =  min((a.count - aIndices[num - 1].count), 
                                     (b.count - bIndices[num - 1].count))
