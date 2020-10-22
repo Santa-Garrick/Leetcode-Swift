@@ -16,7 +16,7 @@
  
 class Solution {
     
-// O(nlog(n)) time because of using array as a queue; could be improved by using a queue with O(1) complexity of dequeue() -> Int method
+// O(nlog(n)) time because of using array as a queue; could be improved by using a queue with O(1) complexity of dequeue() -> TreeNode? method
 // O(n) in that case
 
     
